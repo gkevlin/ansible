@@ -7,6 +7,7 @@ all:
           ansible_host: 172.16.1.199
       vars:
         ansible_become: yes
+        ansible_connection: network_cli
         ansible_become_method: enable
         ansible_network_os: ios
         ansible_user: cisco
