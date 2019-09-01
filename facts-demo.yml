@@ -25,7 +25,11 @@
     # Get running configuration
     #
     - name: Get Running Config
-      debug:
       when: ansible_network_os == 'ios'
       ios_command:
         commands: show run
+      register: config
+    
+    - name: Print Running Config
+      debug:
+        var: config.stdout_lines
