@@ -4,7 +4,7 @@ all:
     cisco_routers:
       hosts:
         router1:
-          ansible_host=172.16.1.199
+          ansible_host: 172.16.1.199
       vars:
         ansible_become: yes
         ansible_become_method: enable
