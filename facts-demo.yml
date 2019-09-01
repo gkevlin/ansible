@@ -1,5 +1,5 @@
 - name: "Demonstrate connecting to switches"
-  hosts: switches
+  hosts: cisco_routers
   gather_facts: no
 
   tasks:
