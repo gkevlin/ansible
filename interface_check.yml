@@ -5,9 +5,5 @@
 
   roles:
     - cisco_router
-
-- name: Enable and describe interfaces
-      ios_config:
-
       
   
