@@ -27,11 +27,4 @@
     - name: Get Running Config
       when: ansible_network_os == 'ios'
       ios_command:
-        - show run
-        register: config
-
-    - name: save output to /etc/ansible/backups
-    copy:
-    content: "{{config.stdout[0]}}"
-    dest: "/etc/ansible/backups/show_run_{{ inventory_hostname }}.txt"
-    
+        commands: show run
