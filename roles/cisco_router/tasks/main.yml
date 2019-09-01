@@ -1,0 +1,8 @@
+---
+- name: Admin Up and Description set
+  with_items: "{{ interfaces }}"
+  ios_interface:
+    name: "{{ item.interface_type }}{{ item.interface_id }}"
+    description: "{{ item.description }}"
+    enabled: "{{ item.enabled }}"
+    
