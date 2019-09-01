@@ -32,4 +32,4 @@
     
     - name: Print Running Config
       debug:
-        var: config.stdout_lines
+        var: config.stdout
