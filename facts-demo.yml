@@ -27,4 +27,5 @@
     - name: Get Running Config
       when: ansible_network_os == 'ios'
       ios_command:
+        debug:
         commands: show run
