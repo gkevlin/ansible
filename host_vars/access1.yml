@@ -8,6 +8,7 @@ interfaces:
 access_ports:
   - ports:
     - 'Gi2/0 - 3'
-      voice: 12
+    voice: 12
+  - ports:  
     - 'Gi3/0 - 3'
-      voice: 13
+    voice: 13
