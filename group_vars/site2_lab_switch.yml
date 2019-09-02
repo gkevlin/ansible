@@ -1,6 +1,6 @@
 ---
 vlans:
-  - id: 26
+  - vlan_id: 26
     name: Workstations-10.0.26.0/24
-  - id: 28
+  - vlan_id: 28
     name: Voice-10.0.28.0/24

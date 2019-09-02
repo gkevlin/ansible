@@ -1,6 +1,6 @@
 ---
 vlans:
-  - id: 7
+  - vlan_id: 7
     name: Eng_Workstations-10.0.7.0/24
-  - id: 8
+  - vlan_id: 8
     name: Voice-10.0.8.0/24
