@@ -1,11 +1,11 @@
 {% for item in access_ports %} 
 
-{% if item.last_port not defined %}
+{% if {{ item.last_port }} not defined %}
 item.last_port = item.first_port + 1
 {% endif %}
 
-start = item.first_port
-finish = item.last_port
+start = {{ item.first_port }}
+finish = {{ item.last_port }}
 
 {% for intCount in range(start,finish) %}
 interface {{ item.interface_type }}{{ item.switch }}/0/{{ intCount }}
