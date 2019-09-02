@@ -1,6 +1,6 @@
 ---
 - name: Admin Up and Description set
   with_items: "{{ access_ports }}"
-  ios_config:
+  template:
     src: access_ports.j2
-    dest: /etc/ansible/{{ inventory_hostname_accessports.txt }}
+    dest: /tmp/testtemplate.txt
