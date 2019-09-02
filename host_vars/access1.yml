@@ -7,8 +7,14 @@ interfaces:
     enabled: "yes"
 access_ports:
   - ports:
-    - 'Gi2/0 - 3'
+    int_type: GigabitEthernet
+    switch: 2
+    first_port: 0
+    last_port: 3
     voice: 12
-  - ports:  
-    - 'Gi3/0 - 3'
+  - ports:
+    int_type: GigabitEthernet
+    switch: 3
+    first_port: 0
+    last_port: 3
     voice: 13
