@@ -1,0 +1,26 @@
+---
+ansible_become: yes
+ansible_connection: network_cli
+ansible_become_method: enable
+ansible_network_os: nxos
+ansible_user: admin
+ansible_password: !vault |
+                  $ANSIBLE_VAULT;1.1;AES256
+                  64333833376130383066316532636261313766636130643637346538386534356638653564343266
+                  3962663537373035373634646637306436323234383333630a353263306236303866636364333134
+                  36383333323765316566346163653465313836306166373937363534346137313938323165366366
+                  6132366136306134370a333538316234303066623034373430626338306332336266323236306661
+                  6566
+vlans:
+  - id: 11
+    name: Test11
+    gateway: 10.0.11.1
+  - id: 12
+    name: Test12
+    gateway: 10.0.12.1
+  - id: 13
+    name: Test13
+    gateway: 10.0.13.1
+  - id: 14
+    name: Test14
+    gateway: 10.0.14.1

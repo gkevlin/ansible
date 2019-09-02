@@ -1,0 +1,14 @@
+---
+- name: "Enable and describe interfaces"
+  hosts: cisco_routers
+  gather_facts: no
+
+  roles:
+    - cisco_router
+
+- name: "VLAN creation"
+  hosts: network_switch
+  gather_facts: no
+
+  roles:
+    - switch_vlans

@@ -1,0 +1,6 @@
+---
+- include_tasks: ios.yml
+  when: ansible_network_os == "ios"
+
+- include_tasks: nxos.yml
+  when: ansible_network_os == "nxos"
