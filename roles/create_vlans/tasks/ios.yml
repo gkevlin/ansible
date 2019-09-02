@@ -1,6 +1,4 @@
 ---
 - name: Create VLANs
-  with_items: "{{ vlans }}"
   ios_vlan:
-    name: "{{ item.name }}"
-    vlan_id: "{{ item.id }}"
+    aggregate: "{{ vlans }}"
