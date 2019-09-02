@@ -3,3 +3,4 @@
   with_items: "{{ access_ports }}"
   ios_config:
     src: access_ports.j2
+    dest: /etc/ansible/{{ inventory_hostname_accessports.txt }}
