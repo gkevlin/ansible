@@ -3,7 +3,7 @@
   when: ansible_network_os == "ios"
 
 - include_tasks: nxos.yml
-  when: ansible_network_os == "nxos"
+  when: ansible_network_os
 
 - include_tasks: leaf.yml
   when: "'leaf' in group_names" 
