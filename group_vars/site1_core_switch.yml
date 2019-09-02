@@ -2,19 +2,13 @@
 vlans:
   - id: 2
     name: ASA_Inside-10.0.1.2/31
-    vni: ""
   - id: 4
     name: ASA_Outside-10.0.1.4/31
-    vni: ""
   - id: 5
     name: Servers-10.0.5.0/24
-    vni: ""
   - id: 6
     name: Workstations-10.0.6.0/24
-    vni: ""
   - id: 7
     name: Eng_Workstations-10.0.7.0/24
-    vni: ""
   - id: 8
     name: Voice-10.0.8.0/24
-    vni: ""
