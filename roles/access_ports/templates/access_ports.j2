@@ -1,0 +1,15 @@
+{% for item in access_ports %} 
+ 
+{% for access in item.ports %} 
+{% if "-" in access|string %}
+interface range {{ access }}
+{% else %}
+interface {{ access }} 
+{% endif %}
+  switchport mode access 
+  switchport access vlan 11
+  {% if item.voice is defined %}
+  switchport voice vlan {{ item.voice }} 
+  {% endif %}
+  no shutdown 
+{% endfor %} 

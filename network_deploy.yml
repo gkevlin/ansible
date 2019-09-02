@@ -12,3 +12,10 @@
 
   roles:
     - switch_vlans
+
+- name: "Access Port Configuration"
+  hosts: access_switch
+  gather_facts: no
+
+  roles:
+    - access_ports

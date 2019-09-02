@@ -5,3 +5,9 @@ interfaces:
     interface_id: 0/1
     description: "### Int 1 ###"
     enabled: "yes"
+access_ports:
+  - ports:
+    - 'Gi2/0 - 3'
+    voice: 12
+    - 'Gi3/0 - 3'
+    voice: 13

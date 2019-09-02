@@ -1,6 +1,0 @@
----
-vlans:
-  - id: 21
-    name: Test21
-  - id: 22
-    name: Test22

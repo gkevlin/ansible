@@ -1,0 +1,5 @@
+---
+- name: Admin Up and Description set
+  with_items: "{{ access_ports }}"
+  ios_config:
+    src: templates/access-ports.j2
