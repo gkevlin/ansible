@@ -19,6 +19,10 @@ ospf_interfaces:
     area: 0
     ospf: 1
     network: point-to-point
+  - interface: Ethernet1/6
+    area: 0
+    ospf: 1
+    network: point-to-point
   - interface: Vlan4
     area: 0
     ospf: 1

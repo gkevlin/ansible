@@ -4,3 +4,6 @@
 
 - include_tasks: nxos.yml
   when: ansible_network_os == "nxos"
+
+- include_tasks: leaf.yml
+  when: "leaf" in groups 
