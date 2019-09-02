@@ -1,0 +1,13 @@
+---
+- name: Create OSPF Instances on NXOS
+  with_items: "{{ ospf_instances }}"
+  nxos_ospf:
+    ospf: "{{ item.ospf }}"
+
+- name: Associate L3 Interfaces with OSPF on NXOS
+  with_items: "{{ ospf_interfaces }}"
+  nxos_interface_ospf:
+    interface: "{{ item.interface }}"
+    area: "{{ item.area }}"
+    ospf: "{{ item.ospf }}"
+    network: "{{ item.network }}"

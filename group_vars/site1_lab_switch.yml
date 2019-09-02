@@ -1,0 +1,6 @@
+---
+vlans:
+  - id: 6
+    name: Workstations-10.0.6.0/24
+  - id: 8
+    name: Voice-10.0.8.0/24

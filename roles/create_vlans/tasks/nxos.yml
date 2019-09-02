@@ -4,3 +4,4 @@
   nxos_vlan:
     vlan_id: "{{ item.id }}"
     name: "{{ item.name }}"
+    mapped_vni: "{{ vni }}"

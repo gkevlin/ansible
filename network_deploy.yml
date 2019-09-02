@@ -1,21 +1,37 @@
 ---
-- name: "Enable and describe interfaces"
-  hosts: cisco_routers
+- name: Deploy Core Configs
+  hosts: core_switch
   gather_facts: no
-
   roles:
-    - cisco_router
+    - enable_features
+    - create_vlans
+    - create_l3_interface
+    - config_ospf
+  tags: core
 
-- name: "VLAN creation"
-  hosts: network_switch
+- name: Deploy Spine Configs
+  hosts: spine  
   gather_facts: no
-
   roles:
-    - switch_vlans
+    - enable_features
+    - create_l3_interface
+    - config_ospf
+  tags: spine
 
-- name: "Access Port Configuration"
+- name: Deploy Leaf Configs
+  hosts: leaf
+  gather_facts: no
+  roles:
+    - enable_features
+    - create_vlans
+    - create_l3_interface
+    - config_ospf
+    - config_vpc
+  tags: leaf
+
+- name: "Deploy Access Configs"
   hosts: access_switch
   gather_facts: no
-
   roles:
+    - create_vlans
     - access_ports

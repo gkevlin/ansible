@@ -1,0 +1,21 @@
+---
+ansible_host: 172.16.1.220
+features:
+  - interface-vlan
+  - ospf
+l3_interfaces:
+  - name: Ethernet1/1
+    ipv4: 10.0.0.3/31
+  - name: Vlan24
+    ipv4: 10.0.21.4/31
+ospf_interfaces:
+  - interface: Ethernet1/1
+    area: 0
+    ospf: 1
+    network: point-to-point
+  - interface: Vlan24
+    area: 0
+    ospf: 1
+    network: point-to-point
+ospf_instances:
+  - ospf: 1

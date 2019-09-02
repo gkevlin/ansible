@@ -1,21 +1,52 @@
-[site1_cisco_routers]
-router1
-
 [site1_core_switch]
-core1
+site1-core1
 
-[site1_access_switch]
-access1
+[site1_lab_switch]
+site1-lab1
+site1-lab2
+
+[site1_eng_switch]
+site1-englab
+
+[site2_core_switch]
+site2-core1
+
+[site2_lab_switch]
+site2-lab1
+site2-lab2
+
+[site2_eng_switch]
+site2-englab
+
+[spine]
+spine1
+
+[leaf]
+leaf1
+leaf2
+
+[site1_infra_fw]
+site1-asa
+
+[site2_infra_fw]
+site2-asa
 
 [core_switch:children]
 site1_core_switch
+site2_core_switch
 
-[cisco_routers:children]
-site1_cisco_routers
+[lab_switch:children]
+site1_lab_switch
+site2_lab_switch
+
+[eng_switch:children]
+site1_eng_switch
+site2_eng_switch
 
 [access_switch:children]
-site1_access_switch
+lab_switch
+eng_switch
 
-[network_switch:children]
-core_switch
-access_switch
+[dc_switch:children]
+spine
+leaf

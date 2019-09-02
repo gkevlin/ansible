@@ -1,7 +1,0 @@
----
-ansible_host: 172.16.1.197
-interfaces:
-  - interface_type: GigabitEthernet
-    interface_id: 0/4
-    description: "### Int 4 ###"
-    enabled: "yes"

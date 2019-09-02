@@ -1,8 +1,0 @@
----
-vlans:
-  - id: 11
-    name: Test11
-  - id: 12
-    name: Test12
-  - id: 13
-    name: Test13

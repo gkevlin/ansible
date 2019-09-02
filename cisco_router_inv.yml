@@ -1,7 +1,0 @@
----
-all:
-  children:
-    cisco_routers:
-      hosts:
-        router1:
-          ansible_host: 172.16.1.199

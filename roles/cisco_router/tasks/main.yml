@@ -5,4 +5,3 @@
     name: "{{ item.interface_type }}{{ item.interface_id }}"
     description: "{{ item.description }}"
     enabled: "{{ item.enabled }}"
-    
