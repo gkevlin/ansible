@@ -1,4 +1,4 @@
-{% for item in access_ports %} 
+{% for item in access_ports %}
 
 {% if item.last_port is defined %}
 {% else %}
@@ -9,9 +9,9 @@
 interface {{ item.int_type }}{{ item.switch }}/{{ intCount }}
   switchport mode access
   switchport access vlan 11
-  {% if item.voice is defined %}
+{% if item.voice is defined %}
   switchport voice vlan {{ item.voice }}
-  {% endif %}
+{% endif %}
 {% endfor %}
 
 {% endfor %}
