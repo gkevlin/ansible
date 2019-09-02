@@ -1,9 +1,9 @@
 {% for item in access_ports %} 
 
-{% if item.last_port not defined %}
-{% set finish = item.first_port + 1 %}
-{% else %}
+{% if item.last_port is defined %}
 {% set finish = item.last_port %}
+{% else %}
+{% set finish = item.first_port + 1 %}
 {% endif %}
 
 {% set start = item.first_port %}
