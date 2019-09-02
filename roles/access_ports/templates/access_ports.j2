@@ -1,15 +1,15 @@
 {% for item in access_ports %} 
 
-{% if {{ item.last_port }} not defined %}
-{% set finsh = {{ item.first_port }} + 1 %}
+{% if item.last_port not defined %}
+{% set finish = item.first_port + 1 %}
 {% else %}
-{% set finsh = {{ item.last_port }}
+{% set finish = item.last_port %}
 {% endif %}
 
-{% set start = {{ item.first_port }} %}
+{% set start = item.first_port %}
 
 {% for intCount in range(start,finish) %}
-interface {{ item.interface_type }}{{ item.switch }}/0/{{ intCount }}
+interface {{ item.int_type }}{{ item.switch }}/0/{{ intCount }}
   switchport mode access 
   switchport access vlan 11
   {% if item.voice is defined %}
