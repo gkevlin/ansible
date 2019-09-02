@@ -32,4 +32,11 @@ ospf_instances:
 trunk_ports:
   - interface_type: Ethernet
     interface_id: 1/3
-    description: "# Uplink to Site1-Core1 E1/3 #"
+    description: "# Uplink to site1-lab1 G0/1 #"
+  - interface_type: Ethernet
+    interface_id: 1/4
+    description: "# Uplink to site1-lab1 G0/1 #"
+  - interface_type: Ethernet
+    interface_id: 1/5
+    description: "# Uplink to site1-englab G0/1 #"
+    

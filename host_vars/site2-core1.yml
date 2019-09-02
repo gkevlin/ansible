@@ -19,3 +19,13 @@ ospf_interfaces:
     network: point-to-point
 ospf_instances:
   - ospf: 1
+trunk_ports:
+  - interface_type: Ethernet
+    interface_id: 1/3
+    description: "# Uplink to site2-lab1 G0/1 #"
+  - interface_type: Ethernet
+    interface_id: 1/4
+    description: "# Uplink to site2-lab1 G0/1 #"
+  - interface_type: Ethernet
+    interface_id: 1/5
+    description: "# Uplink to site2-englab G0/1 #"

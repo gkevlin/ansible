@@ -2,12 +2,12 @@
 - name: Enable and set description on trunk ports
   with_items: "{{ trunk_ports }}"
   nxos_interface:
-    name: "{{ item.name }}"
+    name: "{{ item.interface_type}}{{ interface_id }}"
     description: "{{ item.description }}"
     mode: layer2
 
 - name: Create trunk ports on NXOS
   with_items: "{{ trunk_ports }}"
   nxos_l2_interface:
-    name: "{{ item.name }}"
+    name: "{{ item.interface_type}}{{ interface_id }}"
     mode: trunk

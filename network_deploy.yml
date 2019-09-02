@@ -7,6 +7,7 @@
     - create_vlans
     - create_l3_interface
     - config_ospf
+    - trunk_ports
   tags: core
 
 - name: Deploy Spine Configs
@@ -34,5 +35,6 @@
   gather_facts: no
   roles:
     - create_vlans
+    - trunk_ports
     - access_ports
   tags: access
