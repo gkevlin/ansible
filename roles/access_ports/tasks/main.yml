@@ -3,4 +3,4 @@
   with_items: "{{ access_ports }}"
   template:
     src: access_ports.j2
-    dest: /tmp/testtemplate.txt
+    dest: /tmp/newtest.txt
