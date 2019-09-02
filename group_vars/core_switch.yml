@@ -12,13 +12,9 @@ ansible_password: !vault |
 vlans:
   - id: 11
     name: Test11
-    gateway: 10.0.11.1
   - id: 12
     name: Test12
-    gateway: 10.0.12.1
   - id: 13
     name: Test13
-    gateway: 10.0.13.1
   - id: 14
     name: Test14
-    gateway: 10.0.14.1
