@@ -1,6 +1,6 @@
 ---
 - name: Create VLANs
   with_items: "{{ vlans }}"
-  ios_interface:
+  ios_vlan:
     name: "{{ item.name }}"
     vlan_id: "{{ item.id }}"
