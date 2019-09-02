@@ -1,4 +1,10 @@
 ---
+- name: Make L3 interfaces into routed ports on NXOS
+  with_items: "{{ l3_interfaces }}"
+  nxos_interface:
+    name: "{{ item.name }}"
+    mode: layer3
+
 - name: Create L3 Interfaces on NXOS
   with_items: "{{ l3_interfaces }}"
   nxos_l3_interface:

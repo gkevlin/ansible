@@ -12,5 +12,6 @@ ospf_interfaces:
   - interface: Ethernet1/1
     area: 0
     ospf: 1
+    network: point-to-point
 ospf_instances:
   - ospf: 1
