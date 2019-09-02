@@ -1,7 +1,7 @@
 ---
 ansible_connection: network_cli
 ansible_network_os: nxos
-ansible_user: admin
+ansible_user: cisco
 ansible_password: !vault |
                   $ANSIBLE_VAULT;1.1;AES256
                   64333833376130383066316532636261313766636130643637346538386534356638653564343266
