@@ -1,8 +1,9 @@
 {% for item in access_ports %} 
 
 {% if item.last_port is defined %}
-{% else %}
 {% set item.last_port = 1 + item.first_port | int %}
+{% else %}
+{% set item.last_port = 2 + item.first_port | int %}
 {% endif %}
 
 {% for intCount in range( item.first_port | int,item.last_port | int ) %}
