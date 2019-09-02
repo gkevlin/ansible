@@ -10,4 +10,4 @@
   with_items: "{{ trunk_ports }}"
   ios_l2_interface:
     name: "{{ item.interface }}"
-    mode: trunk
+    mode: "trunk"

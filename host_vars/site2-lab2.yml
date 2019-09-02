@@ -1,6 +1,6 @@
 ---
 ansible_host: 172.16.1.222
-uplinks:
+trunk_ports:
   - interface_type: GigabitEthernet
     interface_id: 0/1
     description: "# Uplink to Site2-Core1 E1/4 #"
