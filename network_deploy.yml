@@ -26,7 +26,7 @@
     - create_vlans
     - create_l3_interface
     - config_ospf
-    - config_vpc
+#    - config_vpc
   tags: leaf
 
 - name: "Deploy Access Configs"
