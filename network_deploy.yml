@@ -35,3 +35,4 @@
   roles:
     - create_vlans
     - access_ports
+  tags: access
