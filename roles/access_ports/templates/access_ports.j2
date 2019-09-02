@@ -12,6 +12,7 @@ interface {{ item.int_type }}{{ item.switch }}/{{ intCount }}
 {% if item.voice is defined %}
   switchport voice vlan {{ item.voice }}
 {% endif %}
+  no shutdown
 {% endfor %}
 
 {% endfor %}
