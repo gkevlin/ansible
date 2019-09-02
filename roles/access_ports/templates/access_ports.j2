@@ -6,7 +6,7 @@
 {% endif %}
 
 {% for intCount in range( item.first_port | int,item.last_port | int ) %}
-interface {{ item.int_type }}{{ item.switch }}/0/{{ intCount }}
+interface {{ item.int_type }}{{ item.switch }}/{{ intCount }}
   switchport mode access 
   switchport access vlan 11
   {% if item.voice is defined %}
