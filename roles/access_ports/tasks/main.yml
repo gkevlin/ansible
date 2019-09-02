@@ -1,6 +1,5 @@
 ---
 - name: Admin Up and Description set
   with_items: "{{ access_ports }}"
-  template:
+  ios_config:
     src: access_ports.j2
-    dest: /tmp/newtest.txt
