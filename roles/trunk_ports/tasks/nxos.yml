@@ -1,0 +1,12 @@
+---
+- name: Create trunk ports on NXOS
+  with_items: "{{ trunk_ports }}"
+  nxos_l2_interface:
+    name: "{{ item.name }}"
+    mode: trunk
+
+- name: Enable and set description on trunk ports
+  with_items: "{{ trunk_ports }}"
+  nxos_interface:
+    name: "{{ item.name }}"
+    description: "{{ item.description }}"
