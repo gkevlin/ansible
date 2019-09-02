@@ -5,3 +5,9 @@
     src: access_ports.j2
     diff_ignore_lines:
       - .*no shutdown
+
+- name: Debug Template Text
+  with_items: "{{ access_ports }}"
+  template:
+    src: access_ports.j2
+    dest: /tmp/testtemplate.txt 
