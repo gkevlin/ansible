@@ -1,14 +1,11 @@
 {% for item in access_ports %} 
 
 {% if item.last_port is defined %}
-{% set finish = item.last_port %}
 {% else %}
-{% set finish = item.first_port + 1 %}
+{% set item.last_port = 1 + item.first_port | int %}
 {% endif %}
 
-{% set start = item.first_port %}
-
-{% for intCount in range(start,finish) %}
+{% for intCount in range( item.first_port | int,item.last_port | int ) %}
 interface {{ item.int_type }}{{ item.switch }}/0/{{ intCount }}
   switchport mode access 
   switchport access vlan 11
