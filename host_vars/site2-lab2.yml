@@ -5,3 +5,10 @@ uplinks:
     interface_id: 0/1
     description: "# Uplink to Site2-Core1 E1/4 #"
     enabled: "yes"
+access_ports:
+  - int_type: GigabitEthernet
+    switch: 0
+    first_port: 2
+    last_port: 2
+    voice: 28
+    data: 27
