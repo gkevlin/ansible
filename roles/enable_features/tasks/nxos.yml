@@ -2,4 +2,4 @@
 - name: Enable features on NXOS
   with_items: "{{ features }}"
   nxos_feature:
-    feature: item
+    feature: "{{ item }}"
