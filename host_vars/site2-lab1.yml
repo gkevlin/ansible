@@ -4,6 +4,7 @@ trunk_ports:
   - interface: GigabitEthernet0/1
     description: "# Uplink to Site2-Core1 E1/3 #"
     enabled: "yes"
+    mode: trunk
 access_ports:
   - int_type: GigabitEthernet
     switch: 0

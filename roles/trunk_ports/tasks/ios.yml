@@ -1,13 +1,5 @@
 ---
-- name: Enable and set description on trunk ports
+- name: Enable Trunk ports
   with_items: "{{ trunk_ports }}"
-  ios_interface:
-    name: "{{ item.interface }}"
-    description: "{{ item.description }}"
-    enabled: yes
-
-- name: Create trunk ports on IOS
-  with_items: "{{ trunk_ports }}"
-  ios_l2_interface:
-    name: "{{ item.interface }}"
-    mode: "trunk"
+  ios_config:
+    src: trunk_ports.j2
