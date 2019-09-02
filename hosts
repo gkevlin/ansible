@@ -19,3 +19,7 @@ site1_access_switch
 [network_switch:children]
 core_switch
 access_switch
+
+[special_switch]
+access1
+core1
