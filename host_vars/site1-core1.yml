@@ -31,9 +31,6 @@ ospf_instances:
   - ospf: 1
 trunk_ports:
   - interface: Ethernet1/3
-    description: "# Uplink to site1-lab1 G0/1 #"
   - interface: Ethernet1/4
-    description: "# Uplink to site1-lab1 G0/1 #"
   - interface: Ethernet1/5
-    description: "# Uplink to site1-englab G0/1 #"
 ntp_interface: Ethernet1/6
