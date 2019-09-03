@@ -1,14 +1,14 @@
 ---
 vlans:
-  - id: 22
+  - vlan_id: 22
     name: ASA_Inside-10.0.21.2/31
-  - id: 24
+  - vlan_id: 24
     name: ASA_Outside-10.0.21.4/31
-  - id: 25
+  - vlan_id: 25
     name: Servers-10.0.25.0/24
-  - id: 26
+  - vlan_id: 26
     name: Workstations-10.0.26.0/24
-  - id: 27
+  - vlan_id: 27
     name: Eng_Workstations-10.0.27.0/24
-  - id: 28
+  - vlan_id: 28
     name: Voice-10.0.28.0/24

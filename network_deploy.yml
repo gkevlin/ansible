@@ -3,8 +3,8 @@
   hosts: core_switch
   gather_facts: no
   roles:
-    - enable_features
     - base_config
+    - enable_features
     - ntp_config
     - create_vlans
     - create_l3_interface
@@ -16,8 +16,8 @@
   hosts: spine  
   gather_facts: no
   roles:
-    - enable_features
     - base_config
+    - enable_features
     - ntp_config
     - create_l3_interface
     - config_ospf
@@ -27,8 +27,8 @@
   hosts: leaf
   gather_facts: no
   roles:
-    - enable_features
     - base_config
+    - enable_features
     - ntp_config
     - create_vlans
     - create_l3_interface

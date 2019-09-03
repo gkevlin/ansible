@@ -10,9 +10,9 @@ ansible_password: !vault |
                   6132366136306134370a333538316234303066623034373430626338306332336266323236306661
                   6566
 vlans:
-  - id: 5
+  - vlan_id: 5
     name: Servers-10.0.5.0/24
-    vni: 5
+    mapped_vni: 5
 features:
   - interface-vlan
   - ospf
