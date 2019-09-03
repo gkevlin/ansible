@@ -8,6 +8,6 @@
   with_items: "{{ ospf_interfaces }}"
   nxos_interface_ospf:
     interface: "{{ item.interface }}"
-    area: "{{ item.area }}"
-    ospf: "{{ item.ospf }}"
-    network: "{{ item.ospf_network_type }}"
+    area: "{{ item.area | default(area) }}"
+    ospf: "{{ item.ospf | default(ospf)) }}"
+    network: "{{ item.ospf_network_type | default(network) }}"
