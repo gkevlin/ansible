@@ -2,9 +2,6 @@
 - name: Enable NTP config on NXOS
   nxos_ntp:
     server: "{{ ntp_server }}"
-
-- name: Set correct NTP interface
-  nxos_ntp:
     source_int: "{{ ntp_interface }}"
     vrf_name: "{{ ntp_vrf }}"
 
