@@ -1,11 +1,11 @@
 ---
 - name: test
   debug:
-    msg: "{{ l3_interfaces.name }}"
+    msg: "{{ lookup('vars',hostvars[inventory_hostname][l3_interfaces].name) }}"
 
 - name: Make L3 interfaces into routed ports on NXOS
   nxos_interface:
-    aggregate: "{{ l3_interfaces }}"
+    aggregate: "{{ lookup('vars',hostvars[inventory_hostname][l3_interfaces].name) }}"
 
 - name: Create L3 Interfaces on NXOS
   nxos_l3_interface:
