@@ -1,14 +1,8 @@
 ---
-#- name: Make L3 interfaces into routed ports on NXOS
-#  with_items: "{{ l3_interfaces }}"
-#  nxos_interface:
-#    name: "{{ item.name }}"
-#    admin_state: up
-#    mode: layer3
-
 - name: Make L3 interfaces into routed ports on NXOS
+  with_items: "{{ l3_interfaces }}"
   nxos_interface:
-    aggregate: "{{ l3_interfaces }}"
+    name: "{{ item.name }}"
     admin_state: up
     mode: layer3
 
