@@ -1,6 +1,0 @@
----
-- name: Configure VLANs
-  with_items: "{{ vlans }}"
-  nxos_vlan:
-    vlan_id: "{{ item.id }}"
-    mapped_vni: "{{ item.vni }}"

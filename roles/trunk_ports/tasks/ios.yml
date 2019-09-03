@@ -1,5 +1,16 @@
 ---
-- name: Enable Trunk ports
+- name: Enable encapsulation of dot1q for legacy switches
   with_items: "{{ trunk_ports }}"
   ios_config:
     src: trunk_ports.j2
+  when: legacy_switch == "yes"
+
+- name: Enable and set description on trunk ports
+  ios_interface:
+    aggregate: "{{ trunk_ports }}"
+    enabled: yes
+
+- name: Create trunk ports on NXOS
+  ios_l2_interface:
+    aggregate: "{{ trunk_ports }}"
+    mode: trunk

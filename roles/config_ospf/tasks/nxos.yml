@@ -10,4 +10,4 @@
     interface: "{{ item.interface }}"
     area: "{{ item.area }}"
     ospf: "{{ item.ospf }}"
-    network: "{{ item.network }}"
+    network: "{{ item.ospf_network_type }}"

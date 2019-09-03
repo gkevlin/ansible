@@ -14,19 +14,19 @@ ospf_interfaces:
   - interface: Ethernet1/1
     area: 0
     ospf: 1
-    network: point-to-point
+    ospf_network_type: point-to-point
   - interface: Ethernet1/2
     area: 0
     ospf: 1
-    network: point-to-point
+    ospf_network_type: point-to-point
   - interface: Ethernet1/6
     area: 0
     ospf: 1
-    network: point-to-point
+    ospf_network_type: point-to-point
   - interface: Vlan4
     area: 0
     ospf: 1
-    network: point-to-point
+    ospf_network_type: point-to-point
 ospf_instances:
   - ospf: 1
 trunk_ports:
@@ -36,4 +36,4 @@ trunk_ports:
     description: "# Uplink to site1-lab1 G0/1 #"
   - interface: Ethernet1/5
     description: "# Uplink to site1-englab G0/1 #"
-    
+ntp_interface: Ethernet1/6

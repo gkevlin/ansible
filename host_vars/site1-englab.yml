@@ -1,10 +1,9 @@
 ---
 ansible_host: 172.16.1.213
+legacy_switch: "yes"
 trunk_ports:
-  - interface: GigabitEthernet0/1
+  - name: GigabitEthernet0/1
     description: "# Uplink to Site1-Core1 E1/5 TEST#"
-    enabled: "yes"
-    mode: trunk
 access_ports:
   - int_type: GigabitEthernet
     switch: 0
@@ -12,3 +11,4 @@ access_ports:
     last_port: 2
     voice: 8
     data: 7
+ntp_interface: GigabitEthernet0/1

@@ -1,0 +1,16 @@
+---
+- name: Enable NTP config on NXOS
+  nxos_ntp:
+    logging: yes
+    server: "{{ ntp_server }}"
+
+- name: Set correct NTP interface
+  nxos_ntp:
+    source_int: "{{ ntp_interface }}"
+    vrf_name: "{{ ntp_vrf }}"
+
+- name: Enable NTP master on core Switches
+  nxos_ntp_options:
+    logging: yes
+    master: yes
+  when: "'core' in group_names"

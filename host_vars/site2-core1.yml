@@ -12,11 +12,11 @@ ospf_interfaces:
   - interface: Ethernet1/1
     area: 0
     ospf: 1
-    network: point-to-point
+    ospf_network_type: point-to-point
   - interface: Vlan24
     area: 0
     ospf: 1
-    network: point-to-point
+    ospf_network_type: point-to-point
 ospf_instances:
   - ospf: 1
 trunk_ports:
@@ -29,3 +29,4 @@ trunk_ports:
   - interface_type: Ethernet
     interface_id: 1/5
     description: "# Uplink to site2-englab G0/1 #"
+ntp_interface: Ethernet1/1

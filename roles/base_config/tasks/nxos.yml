@@ -1,0 +1,7 @@
+---
+- name: Enable base configs on NXOS
+  nxos_system:
+    domain_name: "{{ domain_name }}"
+    name_servers: "{{ dns_servers }}"
+    hostname: "{{ inventory_hostname }}"
+    domain_lookup: yes

@@ -50,3 +50,17 @@ eng_switch
 [dc_switch:children]
 spine
 leaf
+
+[site1:children]
+site1_core_switch
+site1_eng_switch
+site1_lab_switch
+site1_infra_fw
+spine
+leaf
+
+[site2:children]
+site2_core_switch
+site2_lab_switch
+site2_eng_switch
+site2_infra_fw
