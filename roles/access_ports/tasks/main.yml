@@ -3,6 +3,7 @@
   with_items: "{{ access_ports }}"
   ios_config:
     src: access_ports.j2
+  when: access_ports is defined
 
 #- name: Debug Template Text
 #  with_items: "{{ access_ports }}"

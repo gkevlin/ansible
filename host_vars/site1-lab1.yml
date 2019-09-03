@@ -3,11 +3,4 @@ ansible_host: 172.16.1.211
 legacy_switch: "yes"
 trunk_ports:
   - name: GigabitEthernet0/1
-access_ports:
-  - int_type: GigabitEthernet
-    switch: 0
-    first_port: 2
-    last_port: 2
-    voice: 8
-    data: 7
 ntp_interface: GigabitEthernet0/1
