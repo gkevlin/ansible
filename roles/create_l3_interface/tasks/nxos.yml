@@ -8,7 +8,7 @@
 
 - name: Make L3 interfaces into routed ports on NXOS
   nxos_interface:
-    aggregate: "{{ lookup('subelements', l3_interfaces, 'name', {'skip_missing': True} ) }}"
+    aggregate: name="{{ l3_interfaces.name }}"
     admin_state: up
     mode: layer3
 
