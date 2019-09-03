@@ -1,3 +1,5 @@
 ---
-- include_tasks: nxos.yml
-  when: ansible_network_os == "nxos"
+- name: Enable features on NXOS
+  with_items: "{{ features }}"
+  nxos_feature:
+    feature: "{{ item }}"

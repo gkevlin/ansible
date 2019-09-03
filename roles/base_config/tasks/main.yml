@@ -1,6 +1,8 @@
 ---
-- include_tasks: ios.yml
+- name: Base config on IOS
+  include_tasks: ios.yml
   when: ansible_network_os == "ios"
 
-- include_tasks: nxos.yml
+- name: Base config on NXOS
+  include_tasks: nxos.yml
   when: ansible_network_os == "nxos"

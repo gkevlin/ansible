@@ -10,7 +10,7 @@
     aggregate: "{{ trunk_ports }}"
     enabled: yes
 
-- name: Create trunk ports on NXOS
+- name: Create trunk ports on IOS
   ios_l2_interface:
     aggregate: "{{ trunk_ports }}"
     mode: trunk
