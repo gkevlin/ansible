@@ -7,4 +7,3 @@
 - name: Set correct NTP interface
   ios_ntp:
     source_int: "{{ ntp_interface }}"
-    vrf_name: "{{ ntp_vrf }}"
