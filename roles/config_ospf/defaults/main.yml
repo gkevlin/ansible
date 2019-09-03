@@ -1,4 +1,4 @@
 ---
-ospf: 1
-area: 0
+ospf: "1"
+area: "0"
 network: point-to-point
