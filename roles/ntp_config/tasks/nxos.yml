@@ -9,4 +9,4 @@
   nxos_ntp_options:
     logging: yes
     master: yes
-  when: "'core' in group_names"
+  when: "'core_switch' in group_names"
