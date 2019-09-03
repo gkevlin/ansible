@@ -22,4 +22,4 @@ ospf_interfaces:
     ospf_network_type: point-to-point
 ospf_instances:
   - ospf: 1
-ntp_interface: GigabitEthernet0/1
+ntp_interface: Ethernet1/2
