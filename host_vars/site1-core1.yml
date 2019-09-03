@@ -20,21 +20,17 @@ l3_interfaces:
     ipv4: 10.0.8.1/24
 ospf_interfaces:
   - interface: Ethernet1/1
-    area: 0
-    ospf: 1
-    ospf_network_type: point-to-point
   - interface: Ethernet1/2
-    area: 0
-    ospf: 1
-    ospf_network_type: point-to-point
   - interface: Ethernet1/6
-    area: 0
-    ospf: 1
-    ospf_network_type: point-to-point
   - interface: Vlan4
-    area: 0
-    ospf: 1
-    ospf_network_type: point-to-point
+  - interface: Vlan5
+    ospf_network_type: broadcast
+  - interface: Vlan6
+    ospf_network_type: broadcast
+  - interface: Vlan7
+    ospf_network_type: broadcast
+  - interface: Vlan8
+    ospf_network_type: broadcast
 ospf_instances:
   - ospf: 1
 trunk_ports:
