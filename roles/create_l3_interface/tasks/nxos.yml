@@ -3,7 +3,7 @@
   with_items: "{{ l3_interfaces }}"
   nxos_interface:
     name: "{{ item.name }}"
-    admin_state: yes
+    admin_state: up
     mode: layer3
 
 - name: Create L3 Interfaces on NXOS
