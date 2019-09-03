@@ -1,7 +1,6 @@
 ---
 - name: Enable NTP config on NXOS
   nxos_ntp:
-    logging: yes
     server: "{{ ntp_server }}"
 
 - name: Set correct NTP interface
