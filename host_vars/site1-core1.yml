@@ -11,13 +11,13 @@ l3_interfaces:
   - name: Vlan4
     ipv4: 10.0.1.4/31
   - name: Vlan5
-    ipv4: 10.0.5.0/24
+    ipv4: 10.0.5.1/24
   - name: Vlan6
-    ipv4: 10.0.6.0/24
+    ipv4: 10.0.6.1/24
   - name: Vlan7
-    ipv4: 10.0.7.0/24
+    ipv4: 10.0.7.1/24
   - name: Vlan8
-    ipv4: 10.0.8.0/24
+    ipv4: 10.0.8.1/24
 ospf_interfaces:
   - interface: Ethernet1/1
     area: 0
