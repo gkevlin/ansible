@@ -3,6 +3,7 @@ ansible_host: 172.16.1.202
 l3_interfaces:
   - name: Ethernet1/1
     ipv4: 10.0.1.101/31
+  - name: Vlan24
 ospf_interfaces:
   - interface: Ethernet1/1
     area: 0
